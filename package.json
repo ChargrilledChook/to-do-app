@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,12 @@
   },
   "homepage": "https://github.com/ChargrilledChook/to-do-app#readme",
   "devDependencies": {
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

@@ -1,0 +1,12 @@
+/* My own extensions to normalize.css. Non styling based set-up / boilerplate */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
