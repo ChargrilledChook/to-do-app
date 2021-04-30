@@ -25,6 +25,7 @@ Sort into 3 buckets below
 - CSS animations
 - Ordering / filtering
 - Firebase / Oauth
+- Notes
 
 ## Extra Extra / Scope Creep
 
