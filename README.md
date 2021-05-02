@@ -21,15 +21,19 @@ Sort into 3 buckets below
 
 ## Extra / Bonus
 
-- Dynamic user interactions
-- CSS animations
+- Nice styling
 - Ordering / filtering
 - Firebase / Oauth
 - Notes
 
-## Extra Extra / Scope Creep
+## Extra Extra
 
+- Dynamic user interactions
+- CSS animations
 - Weather widget
 - Quote banner w/ API
+
+## Scope Creep
+
 - PWA
 - Pomodoro timer
