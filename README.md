@@ -6,7 +6,7 @@ Web dev's initiation ritual
 
 ## Todo
 
-- [ ] Set up date npm package
+- [ ] Sketch object structure
 
 ## Potential Features
 
@@ -35,5 +35,6 @@ Sort into 3 buckets below
 
 ## Scope Creep
 
+- Dynamic tutorial
 - PWA
 - Pomodoro timer
