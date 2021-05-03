@@ -90,13 +90,23 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/js/displayTodo.js":
+/*!*******************************!*\
+  !*** ./src/js/displayTodo.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"DisplayTodo\": () => (/* binding */ DisplayTodo)\n/* harmony export */ });\nclass DisplayTodo {\n  constructor(todo) {\n    this.todo = todo;\n  }\n\n  get card() {\n    return this._createCard();\n  }\n\n  _createCard() {\n    const container = document.createElement(\"div\");\n    container.append(this._title(), this._description(), this._dueDate());\n    return container;\n  }\n\n  _title() {\n    const title = document.createElement(\"h3\");\n    title.textContent = this.todo.title;\n    return title;\n  }\n\n  _description() {\n    const desc = document.createElement(\"div\");\n    desc.textContent = this.todo.description;\n    return desc;\n  }\n\n  _dueDate() {\n    const due = document.createElement(\"div\");\n    due.textContent = this.todo.date;\n    return due;\n  }\n}\n\n\n//# sourceURL=webpack://to-do-app/./src/js/displayTodo.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n/* harmony import */ var _styles_defaults_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/defaults.css */ \"./src/styles/defaults.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _toDo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./toDo */ \"./src/js/toDo.js\");\n\n\n\n\n\nconst test = new _toDo__WEBPACK_IMPORTED_MODULE_3__.Todo(\"Groceries\", \"Get some groceries\", \"14/04/14\");\n\nconsole.table(test);\n\n\n//# sourceURL=webpack://to-do-app/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n/* harmony import */ var _styles_defaults_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/defaults.css */ \"./src/styles/defaults.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _toDo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./toDo */ \"./src/js/toDo.js\");\n/* harmony import */ var _displayTodo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./displayTodo */ \"./src/js/displayTodo.js\");\n\n\n\n\n\n\nconst test = new _toDo__WEBPACK_IMPORTED_MODULE_3__.Todo(\"Groceries\", \"Get some groceries\", \"14/04/14\");\n\nconsole.table(test);\n\nconst main = document.querySelector(\".main\");\n\nconst todoHTML = new _displayTodo__WEBPACK_IMPORTED_MODULE_4__.DisplayTodo(test);\nmain.append(todoHTML.card);\n\n\n//# sourceURL=webpack://to-do-app/./src/js/index.js?");
 
 /***/ }),
 
@@ -106,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var norm
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Todo\": () => (/* binding */ Todo)\n/* harmony export */ });\n// A single Todo / task and it's data\n\nclass Todo {\n  constructor(title, description, date) {\n    this.title = title;\n    this.description = description;\n    this.date = date;\n  }\n}\n\n\n//# sourceURL=webpack://to-do-app/./src/js/toDo.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Todo\": () => (/* binding */ Todo)\n/* harmony export */ });\n// A single Todo / task and it's data\n\nclass Todo {\n  constructor(title, description, date) {\n    this.title = title;\n    this.description = description;\n    this.date = date;\n    this.created = Date.now();\n  }\n}\n\n\n//# sourceURL=webpack://to-do-app/./src/js/toDo.js?");
 
 /***/ })
 

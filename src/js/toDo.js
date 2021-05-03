@@ -5,5 +5,6 @@ export class Todo {
     this.title = title;
     this.description = description;
     this.date = date;
+    this.created = Date.now();
   }
 }
