@@ -5,10 +5,10 @@ class StorageManager {
 
   checkStorage() {
     if (!localStorage.getItem("todos")) {
-      const data = {};
+      const storage = {};
     } else {
-      const data = JSON.parse(localStorage.getItem("todos"));
+      const storage = JSON.parse(localStorage.getItem("todos"));
     }
-    return data;
+    return storage;
   }
 }
