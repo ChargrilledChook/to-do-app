@@ -12,3 +12,9 @@ const main = document.querySelector(".main");
 
 const todoHTML = new DisplayTodo(test);
 main.append(todoHTML.card);
+
+// Add Todo Button
+const addButton = document.querySelector(".add-todo");
+addButton.addEventListener("click", () => {
+  console.log("Clicky");
+});
