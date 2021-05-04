@@ -34,3 +34,26 @@ body {
   height: 60px;
   width: 60px;
 }
+
+.modal {
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  display: none;
+  place-items: center;
+}
+
+.modal fieldset {
+  background-color: rgb(209, 199, 199);
+  border: 2px solid black;
+  min-width: 40ch;
+  display: flex;
+  flex-direction: column ;
+}
+
+fieldset input{
+  margin-bottom: 2rem;
+}
+
