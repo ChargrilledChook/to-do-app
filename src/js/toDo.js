@@ -1,10 +1,13 @@
-// A single Todo / task and it's data
+// A single Todo / task and its data
 
 export class Todo {
-  constructor(title, description, date) {
-    this.title = title;
-    this.description = description;
-    this.date = date;
+  constructor(options) {
+    this.id = options.id;
+    this.title = options.title;
+    this.description = options.description;
+    this.date = options.date;
+    this.project = options.project;
+    this.priority = options.priority;
     this.created = Date.now();
   }
 }
