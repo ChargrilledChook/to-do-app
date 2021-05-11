@@ -7,6 +7,7 @@ export class Todo {
     this.date = options.date;
     this.project = options.project;
     this.priority = options.priority;
+    this.complete = options.complete;
     this.created = Date.now();
   }
 }
