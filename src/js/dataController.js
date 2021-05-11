@@ -20,10 +20,11 @@ class DataController {
     return this.todoList.filter((entry) => entry.project === project);
   }
 
+  // Might need some error handling? if it returns -1 abort etc
   deleteTodo(id) {
     const index = this.todoList.findIndex((entry) => entry.id === id);
-    data.splice(index, 1);
-    return todoList;
+    this.todoList.splice(index, 1);
+    return this.todoList;
   }
 
   // compareFN snippet adapted from https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
