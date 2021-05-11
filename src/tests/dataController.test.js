@@ -13,8 +13,10 @@ const testObjs = [
 
 testObjs.forEach((obj) => controller.addTodo(obj));
 
+console.log(controller);
 describe("delete todo", () => {
-  test("correctly deletes a todo from the middle", () => {
-    expect(controller.deleteTodo(2));
+  test("correctly deletes a todo", () => {
+    controller.deleteTodo(2);
+    expect(controller.todoList.length).toBe(4);
   });
 });
