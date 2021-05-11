@@ -1,5 +1,4 @@
 // A single Todo / task and its data
-
 export class Todo {
   constructor(options) {
     this.id = options.id;
