@@ -1,4 +1,4 @@
-import { Todo } from "./todo";
+import { Todo } from "./todo.js";
 
 export class DataController {
   constructor(idCounter = 0, todoList = []) {

@@ -1,10 +1,10 @@
 import "normalize.css";
 import "../styles/defaults.css";
 import "../styles/main.css";
-import { checkStorage } from "./storageManager";
-import { Todo } from "./todo";
-import { DataController } from "./dataController";
-import { DisplayTodo } from "./displayTodo";
+import { checkStorage } from "./storageManager.js";
+import { Todo } from "./todo.js";
+import { DataController } from "./dataController.js";
+import { DisplayTodo } from "./displayTodo.js";
 
 console.log(JSON.parse(localStorage.todoData));
 

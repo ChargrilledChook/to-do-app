@@ -13,7 +13,7 @@
 //   }
 // }
 
-import { DataController } from "./dataController";
+import { DataController } from "./dataController.js";
 
 export function checkStorage() {
   if (!localStorage.getItem("todoData")) return new DataController();
