@@ -1,7 +1,9 @@
-class DataController {
-  constructor() {
-    this.todoList = checkStorage(); // Temp / conceptual
-    this.idCounter = 0;
+import { Todo } from "./todo";
+
+export class DataController {
+  constructor(idCounter = 0, todoList = []) {
+    this.idCounter = idCounter;
+    this.todoList = todoList;
   }
 
   get projects() {
