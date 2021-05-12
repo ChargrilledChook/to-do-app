@@ -16,6 +16,7 @@ export class DisplayTodo {
       this._dueDate()
     );
     container.classList.add("todo-card");
+    container.id = `todo#${this.todo.id}`;
     return container;
   }
 
