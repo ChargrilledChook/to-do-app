@@ -15,7 +15,8 @@ export class DataController {
     const todo = new Todo(options);
     this.idCounter++;
     this.todoList.push(todo);
-    return this;
+    // Return the thing we just added so we can use it straight away
+    return this.todoList[this.todoList.length - 1];
   }
 
   listByProject(project) {
