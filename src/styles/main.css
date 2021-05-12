@@ -1,42 +1,68 @@
 /* This stylesheet is temporary, a bare minimum to help test functionality  */
 
+/* GENERAL STYLES ===================================================================== */
 body {
   min-height: 100vh;
-  background-color: rgb(117, 173, 154);
   font-size: 1.8rem;
+  background-color: #eff0f1;
+  /* Temp to soften for eyes */
 }
+
+/* HEADER ================================================================================= */
 
 .header {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
   min-height: 10rem;
-  background-color: rgb(169, 226, 234);
-}
-
-.main {
-  margin: auto;
-  display: grid;
-  justify-content: center;
-  max-width: 70ch;
-  min-height: 80vh;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: rgb(247, 200, 171);
-}
-
-.footer {
-  min-height: 10rem;
-  background-color: rgb(223, 211, 228);
+  background-color: #2989ed;
 }
 
 .add-todo {
+  margin-left: 3rem;
   border-radius: 50%;
   height: 60px;
   width: 60px;
+  font-size: 5rem;
 }
 
-.modal {
+.header h2 {
+  margin-left: 5rem;
+  color: white;
+}
 
+/* NAV / MAIN WRAPPER - LAYOUT ========================================*/
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+}
+/* MAIN LEFT NAV ====================================================== */
+
+.main-nav {
+  border-right: 2px solid black;
+  min-height: 100vh;
+  background-color: #efefef;
+  padding: 2rem;
+}
+
+/* MAIN AREA / TODO VIEW =============================================== */
+
+.main {
+  padding: 0 2rem;
+}
+
+.list-view {
+  background-color: white;
+  border: 1px dotted black;
+  border-radius: 5px;
+  margin: 2rem 1rem;
+  padding: 0 2rem;
+  min-height: 20rem;
+}
+
+/* MODAL ============================================================== */
+
+.modal {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -50,10 +76,9 @@ body {
   border: 2px solid black;
   min-width: 40ch;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }
 
-fieldset input{
+fieldset input {
   margin-bottom: 2rem;
 }
-

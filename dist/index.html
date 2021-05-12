@@ -15,21 +15,37 @@
   <body>
     <header class="header">
       <button class="add-todo">+</button>
+      <h2>Just To Do it.</h2>
     </header>
-    <main class="main"></main>
+    <div class="main-wrapper">
+      <nav class="main-nav">
+        <div>Home</div>
+        <h3>Projects</h3>
+        <div>Placeholder</div>
+        <div>Placeholder</div>
+        <div>Placeholder</div>
+      </nav>
+      <main class="main">
+        <div class="todo-window list-view">
+          <h2>To Do</h2>
+        </div>
+        <div class="complete-window list-view">
+          <h2>Complete</h2>
+        </div>
+      </main>
+    </div>
 
     <form class="modal">
       <fieldset>
-        <Legend>New Todo</Legend>
+        <legend>New Todo</legend>
         <label for="name">Name</label>
-        <input type="text" name="name">
+        <input type="text" name="name" />
         <label for="description">Description</label>
-        <input type="text" name="description">
+        <input type="text" name="description" />
         <label for="due-date">Due</label>
-        <input type="datetime-local" name="due-date">
-        <input type="button" value="submit" id="submit">
+        <input type="datetime-local" name="due-date" />
+        <input type="button" value="submit" id="submit" />
       </fieldset>
     </form>
-    <footer class="footer"></footer>
   </body>
 </html>

@@ -1,0 +1,53 @@
+/* This stylesheet is temporary, a bare minimum to help test functionality  */
+
+body {
+  min-height: 100vh;
+  background-color: rgb(117, 173, 154);
+  font-size: 1.8rem;
+  background-color: #fdfdfd;
+}
+
+.header {
+  display: grid;
+  place-items: center;
+  min-height: 10rem;
+  background-color: #2989ed;
+}
+
+.main {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  max-width: 70ch;
+  min-height: 80vh;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(247, 200, 171);
+}
+
+.add-todo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  display: none;
+  place-items: center;
+}
+
+.modal fieldset {
+  background-color: rgb(209, 199, 199);
+  border: 2px solid black;
+  min-width: 40ch;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input {
+  margin-bottom: 2rem;
+}
