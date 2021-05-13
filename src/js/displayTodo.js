@@ -13,11 +13,10 @@ export class DisplayTodo {
     const container = document.createElement("div");
     container.append(
       this._title(),
-      this._description(),
-      this._id(),
       this._dueDate(),
       this._deleteButton()
     );
+
     container.classList.add("todo-card");
     // This might work better as a data attribute
     container.id = `todo#${this.todo.id}`;
@@ -30,17 +29,17 @@ export class DisplayTodo {
     return title;
   }
 
-  _description() {
-    const desc = document.createElement("div");
-    desc.textContent = this.todo.description;
-    return desc;
-  }
+  // _description() {
+  //   const desc = document.createElement("div");
+  //   desc.textContent = this.todo.description;
+  //   return desc;
+  // }
 
-  _id() {
-    const desc = document.createElement("div");
-    desc.textContent = this.todo.id;
-    return desc;
-  }
+  // _id() {
+  //   const desc = document.createElement("div");
+  //   desc.textContent = this.todo.id;
+  //   return desc;
+  // }
 
   _dueDate() {
     const due = document.createElement("div");
