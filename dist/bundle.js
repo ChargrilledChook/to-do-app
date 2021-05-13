@@ -2847,7 +2847,9 @@ addButton.addEventListener("click", function () {
   }
 });
 var submitButton = document.querySelector("#submit");
-submitButton.addEventListener("click", function () {
+submitButton.addEventListener("click", formHandler);
+
+function formHandler() {
   var title = document.querySelector("input[name='name']").value;
   var description = document.querySelector("input[name='description']").value;
   var dueDate = document.querySelector("input[name='due-date']").value;
@@ -2860,7 +2862,10 @@ submitButton.addEventListener("click", function () {
   console.log(todo);
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
-});
+  var modal = document.querySelector(".modal");
+  modal.style.display = "none";
+  modal.reset();
+}
 
 function addTodoToDom(data) {
   var todo = todoData.addTodo(data);

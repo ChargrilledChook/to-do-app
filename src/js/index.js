@@ -26,7 +26,9 @@ addButton.addEventListener("click", () => {
 });
 
 const submitButton = document.querySelector("#submit");
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", formHandler);
+
+function formHandler() {
   const title = document.querySelector("input[name='name']").value;
   const description = document.querySelector("input[name='description']").value;
   const dueDate = document.querySelector("input[name='due-date']").value;
@@ -37,7 +39,10 @@ submitButton.addEventListener("click", () => {
 
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
-});
+  const modal = document.querySelector(".modal");
+  modal.style.display = "none";
+  modal.reset();
+}
 
 function addTodoToDom(data) {
   const todo = todoData.addTodo(data);
