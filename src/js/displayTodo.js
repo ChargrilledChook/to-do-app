@@ -19,6 +19,7 @@ export class DisplayTodo {
       this._deleteButton()
     );
     container.classList.add("todo-card");
+    // This might work better as a data attribute
     container.id = `todo#${this.todo.id}`;
     return container;
   }

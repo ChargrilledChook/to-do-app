@@ -136,7 +136,8 @@ var DisplayTodo = /*#__PURE__*/function () {
     value: function _createCard() {
       var container = document.createElement("div");
       container.append(this._title(), this._description(), this._id(), this._dueDate(), this._deleteButton());
-      container.classList.add("todo-card");
+      container.classList.add("todo-card"); // This might work better as a data attribute
+
       container.id = "todo#".concat(this.todo.id);
       return container;
     }
