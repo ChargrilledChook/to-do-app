@@ -135,7 +135,7 @@ var DisplayTodo = /*#__PURE__*/function () {
     key: "_createCard",
     value: function _createCard() {
       var container = document.createElement("div");
-      container.append(this._title(), this._description(), this._id(), this._dueDate());
+      container.append(this._title(), this._description(), this._id(), this._dueDate(), this._deleteButton());
       container.classList.add("todo-card");
       container.id = "todo#".concat(this.todo.id);
       return container;
@@ -179,6 +179,13 @@ var DisplayTodo = /*#__PURE__*/function () {
       } catch (error) {
         return "";
       }
+    }
+  }, {
+    key: "_deleteButton",
+    value: function _deleteButton() {
+      var deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Delete";
+      return deleteBtn;
     }
   }]);
 
@@ -2819,8 +2826,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./todo.js */ "./src/js/todo.js");
 /* harmony import */ var _dataController_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dataController.js */ "./src/js/dataController.js");
 /* harmony import */ var _displayTodo_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./displayTodo.js */ "./src/js/displayTodo.js");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/parseISO/index.js");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/formatDistanceToNow/index.js");
 
 
 
@@ -2879,32 +2884,24 @@ function renderTodos(container, list) {
     container.removeChild(container.lastChild);
   }
 
-  list.forEach(function (todo) {
-    return container.append(new _displayTodo_js__WEBPACK_IMPORTED_MODULE_6__.DisplayTodo(todo).card);
+  var todos = list.map(function (todo) {
+    return new _displayTodo_js__WEBPACK_IMPORTED_MODULE_6__.DisplayTodo(todo).card;
   });
-}
-
-localStorage.setItem("todoData", JSON.stringify(todoData));
-var option1 = {
-  title: "Date1",
-  dueDate: "2022-05-08"
-};
-var option2 = {
-  title: "Date1",
-  dueDate: "2022-05-08"
-};
-var todo1 = new _todo_js__WEBPACK_IMPORTED_MODULE_4__.Todo(option1);
-var todo2 = new _todo_js__WEBPACK_IMPORTED_MODULE_4__.Todo(option2);
-console.log({
-  todo1: todo1,
-  todo2: todo2
-});
-var iso = (0,date_fns__WEBPACK_IMPORTED_MODULE_7__.default)(option1.dueDate); // const formatted = format(iso, "");
-
-var distance = (0,date_fns__WEBPACK_IMPORTED_MODULE_8__.default)(iso, {
-  addSuffix: true
-});
-console.log(distance);
+  todos.forEach(function (todo) {
+    var deleteBtn = todo.querySelector("button");
+    deleteBtn.addEventListener("click", function () {
+      var id = Number(todo.id.split("#")[1]);
+      console.log(id);
+      todoData.deleteTodo(id);
+      renderTodos(container, list);
+    });
+  });
+  todos.forEach(function (todo) {
+    return container.append(todo);
+  });
+  localStorage.setItem("todoData", JSON.stringify(todoData));
+} // I think this can be safely deleted but leaving for now in case
+// localStorage.setItem("todoData", JSON.stringify(todoData));
 })();
 
 /******/ })()

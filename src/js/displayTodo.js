@@ -15,7 +15,8 @@ export class DisplayTodo {
       this._title(),
       this._description(),
       this._id(),
-      this._dueDate()
+      this._dueDate(),
+      this._deleteButton()
     );
     container.classList.add("todo-card");
     container.id = `todo#${this.todo.id}`;
@@ -53,5 +54,11 @@ export class DisplayTodo {
     } catch (error) {
       return "";
     }
+  }
+
+  _deleteButton() {
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    return deleteBtn;
   }
 }

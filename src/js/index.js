@@ -54,28 +54,19 @@ function renderTodos(container, list) {
   while (nodes.length > 2) {
     container.removeChild(container.lastChild);
   }
-  list.forEach((todo) => container.append(new DisplayTodo(todo).card));
+  const todos = list.map((todo) => new DisplayTodo(todo).card);
+  todos.forEach((todo) => {
+    const deleteBtn = todo.querySelector("button");
+    deleteBtn.addEventListener("click", () => {
+      const id = Number(todo.id.split("#")[1]);
+      console.log(id);
+      todoData.deleteTodo(id);
+      renderTodos(container, list);
+    });
+  });
+  todos.forEach((todo) => container.append(todo));
+  localStorage.setItem("todoData", JSON.stringify(todoData));
 }
 
-localStorage.setItem("todoData", JSON.stringify(todoData));
-
-const option1 = {
-  title: "Date1",
-  dueDate: "2022-05-08",
-};
-
-const option2 = {
-  title: "Date1",
-  dueDate: "2022-05-08",
-};
-
-const todo1 = new Todo(option1);
-const todo2 = new Todo(option2);
-
-console.log({ todo1, todo2 });
-
-const iso = parseISO(option1.dueDate);
-
-// const formatted = format(iso, "");
-const distance = formatDistanceToNow(iso, { addSuffix: true });
-console.log(distance);
+// I think this can be safely deleted but leaving for now in case
+// localStorage.setItem("todoData", JSON.stringify(todoData));
