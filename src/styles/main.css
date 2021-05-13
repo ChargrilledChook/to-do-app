@@ -74,6 +74,19 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
+.todo-card button {
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: pink;
+  color: red;
+  cursor: pointer;
+}
+
+.todo-card button:hover {
+  background-color: rgb(236, 222, 225);
+}
+
 /* MODAL ============================================================== */
 
 .modal {

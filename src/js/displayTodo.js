@@ -58,7 +58,7 @@ export class DisplayTodo {
 
   _deleteButton() {
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
+    deleteBtn.textContent = "X";
     return deleteBtn;
   }
 }
