@@ -290,7 +290,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* My own extensions to normalize.css. Non styling based set-up / boilerplate */\n\nhtml {\n  box-sizing: border-box;\n  font-size: 62.5%;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: inherit;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/defaults.css"],"names":[],"mappings":"AAAA,+EAA+E;;AAE/E;EACE,sBAAsB;EACtB,gBAAgB;AAClB;;AAEA;;;EAGE,mBAAmB;AACrB","sourcesContent":["/* My own extensions to normalize.css. Non styling based set-up / boilerplate */\n\nhtml {\n  box-sizing: border-box;\n  font-size: 62.5%;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: inherit;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* My own extensions to normalize.css. Non styling based set-up / boilerplate */\r\n\r\nhtml {\r\n  box-sizing: border-box;\r\n  font-size: 62.5%;\r\n}\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: inherit;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/defaults.css"],"names":[],"mappings":"AAAA,+EAA+E;;AAE/E;EACE,sBAAsB;EACtB,gBAAgB;AAClB;;AAEA;;;EAGE,mBAAmB;AACrB","sourcesContent":["/* My own extensions to normalize.css. Non styling based set-up / boilerplate */\r\n\r\nhtml {\r\n  box-sizing: border-box;\r\n  font-size: 62.5%;\r\n}\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: inherit;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -316,7 +316,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* This stylesheet is temporary, a bare minimum to help test functionality  */\n\n/* GENERAL STYLES ===================================================================== */\nbody {\n  min-height: 100vh;\n  font-size: 1.8rem;\n  background-color: #eff0f1;\n  /* Temp to soften for eyes */\n}\n\n/* HEADER ================================================================================= */\n\n.header {\n  display: flex;\n  align-items: center;\n  min-height: 10rem;\n  background-color: #2989ed;\n}\n\n.add-todo {\n  margin-left: 3rem;\n  border-radius: 50%;\n  height: 60px;\n  width: 60px;\n  font-size: 5rem;\n}\n\n.header h2 {\n  margin-left: 5rem;\n  color: white;\n}\n\n/* NAV / MAIN WRAPPER - LAYOUT ========================================*/\n\n.main-wrapper {\n  display: grid;\n  grid-template-columns: 30rem 1fr;\n}\n/* MAIN LEFT NAV ====================================================== */\n\n.main-nav {\n  border-right: 2px solid black;\n  min-height: 100vh;\n  background-color: #efefef;\n  padding: 2rem;\n}\n\n/* MAIN AREA / TODO VIEW =============================================== */\n\n.main {\n  padding: 0 2rem;\n}\n\n.list-view {\n  background-color: white;\n  border: 1px dotted black;\n  border-radius: 5px;\n  margin: 2rem 1rem;\n  padding: 0 2rem;\n  min-height: 20rem;\n}\n\n/* TODO CARD ========================================================== */\n\n.todo-header {\n  background-color: beige;\n  font-weight: 800;\n  border-top: 2px solid black;\n  border-bottom: 2px solid black;\n}\n\n.todo-card {\n  display: flex;\n  align-items: center;\n  gap: 2rem;\n}\n\n.todo-card button {\n  border-radius: 50%;\n  border: 2px solid red;\n  background-color: pink;\n  color: red;\n  cursor: pointer;\n}\n\n.todo-card button:hover {\n  background-color: rgb(236, 222, 225);\n}\n\n/* MODAL ============================================================== */\n\n.modal {\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  top: 30%;\n  display: none;\n  place-items: center;\n}\n\n.modal fieldset {\n  background-color: rgb(209, 199, 199);\n  border: 2px solid black;\n  min-width: 40ch;\n  display: flex;\n  flex-direction: column;\n}\n\nfieldset input {\n  margin-bottom: 2rem;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA,6EAA6E;;AAE7E,yFAAyF;AACzF;EACE,iBAAiB;EACjB,iBAAiB;EACjB,yBAAyB;EACzB,4BAA4B;AAC9B;;AAEA,6FAA6F;;AAE7F;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,YAAY;EACZ,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,iBAAiB;EACjB,YAAY;AACd;;AAEA,wEAAwE;;AAExE;EACE,aAAa;EACb,gCAAgC;AAClC;AACA,yEAAyE;;AAEzE;EACE,6BAA6B;EAC7B,iBAAiB;EACjB,yBAAyB;EACzB,aAAa;AACf;;AAEA,0EAA0E;;AAE1E;EACE,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,wBAAwB;EACxB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;EACf,iBAAiB;AACnB;;AAEA,yEAAyE;;AAEzE;EACE,uBAAuB;EACvB,gBAAgB;EAChB,2BAA2B;EAC3B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,qBAAqB;EACrB,sBAAsB;EACtB,UAAU;EACV,eAAe;AACjB;;AAEA;EACE,oCAAoC;AACtC;;AAEA,yEAAyE;;AAEzE;EACE,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,QAAQ;EACR,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,oCAAoC;EACpC,uBAAuB;EACvB,eAAe;EACf,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* This stylesheet is temporary, a bare minimum to help test functionality  */\n\n/* GENERAL STYLES ===================================================================== */\nbody {\n  min-height: 100vh;\n  font-size: 1.8rem;\n  background-color: #eff0f1;\n  /* Temp to soften for eyes */\n}\n\n/* HEADER ================================================================================= */\n\n.header {\n  display: flex;\n  align-items: center;\n  min-height: 10rem;\n  background-color: #2989ed;\n}\n\n.add-todo {\n  margin-left: 3rem;\n  border-radius: 50%;\n  height: 60px;\n  width: 60px;\n  font-size: 5rem;\n}\n\n.header h2 {\n  margin-left: 5rem;\n  color: white;\n}\n\n/* NAV / MAIN WRAPPER - LAYOUT ========================================*/\n\n.main-wrapper {\n  display: grid;\n  grid-template-columns: 30rem 1fr;\n}\n/* MAIN LEFT NAV ====================================================== */\n\n.main-nav {\n  border-right: 2px solid black;\n  min-height: 100vh;\n  background-color: #efefef;\n  padding: 2rem;\n}\n\n/* MAIN AREA / TODO VIEW =============================================== */\n\n.main {\n  padding: 0 2rem;\n}\n\n.list-view {\n  background-color: white;\n  border: 1px dotted black;\n  border-radius: 5px;\n  margin: 2rem 1rem;\n  padding: 0 2rem;\n  min-height: 20rem;\n}\n\n/* TODO CARD ========================================================== */\n\n.todo-header {\n  background-color: beige;\n  font-weight: 800;\n  border-top: 2px solid black;\n  border-bottom: 2px solid black;\n}\n\n.todo-card {\n  display: flex;\n  align-items: center;\n  gap: 2rem;\n}\n\n.todo-card button {\n  border-radius: 50%;\n  border: 2px solid red;\n  background-color: pink;\n  color: red;\n  cursor: pointer;\n}\n\n.todo-card button:hover {\n  background-color: rgb(236, 222, 225);\n}\n\n/* MODAL ============================================================== */\n\n.modal {\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  top: 30%;\n  display: none;\n  place-items: center;\n}\n\n.modal fieldset {\n  background-color: rgb(209, 199, 199);\n  border: 2px solid black;\n  min-width: 40ch;\n  display: flex;\n  flex-direction: column;\n}\n\nfieldset input {\n  margin-bottom: 2rem;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* This stylesheet is temporary, a bare minimum to help test functionality  */\r\n\r\n/* GENERAL STYLES ===================================================================== */\r\nbody {\r\n  min-height: 100vh;\r\n  font-size: 1.8rem;\r\n  background-color: #eff0f1;\r\n  /* Temp to soften for eyes */\r\n}\r\n\r\n/* HEADER ================================================================================= */\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 10rem;\r\n  background-color: #2989ed;\r\n}\r\n\r\n.add-todo {\r\n  margin-left: 3rem;\r\n  border-radius: 50%;\r\n  height: 60px;\r\n  width: 60px;\r\n  font-size: 5rem;\r\n}\r\n\r\n.header h2 {\r\n  margin-left: 5rem;\r\n  color: white;\r\n}\r\n\r\n/* NAV / MAIN WRAPPER - LAYOUT ========================================*/\r\n\r\n.main-wrapper {\r\n  display: grid;\r\n  grid-template-columns: 30rem 1fr;\r\n}\r\n/* MAIN LEFT NAV ====================================================== */\r\n\r\n.main-nav {\r\n  border-right: 2px solid black;\r\n  min-height: 100vh;\r\n  background-color: #efefef;\r\n  padding: 2rem;\r\n}\r\n\r\n/* MAIN AREA / TODO VIEW =============================================== */\r\n\r\n.main {\r\n  padding: 0 2rem;\r\n}\r\n\r\n.list-view {\r\n  background-color: white;\r\n  border: 1px dotted black;\r\n  border-radius: 5px;\r\n  margin: 2rem 1rem;\r\n  padding: 0 2rem;\r\n  min-height: 20rem;\r\n}\r\n\r\n/* TODO CARD ========================================================== */\r\n\r\n.todo-header {\r\n  background-color: beige;\r\n  font-weight: 800;\r\n  border-top: 2px solid black;\r\n  border-bottom: 2px solid black;\r\n}\r\n\r\n.todo-card {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 2rem;\r\n}\r\n\r\n.todo-card button {\r\n  border-radius: 50%;\r\n  border: 2px solid red;\r\n  background-color: pink;\r\n  color: red;\r\n  cursor: pointer;\r\n}\r\n\r\n.todo-card button:hover {\r\n  background-color: rgb(236, 222, 225);\r\n}\r\n\r\n/* MODAL ============================================================== */\r\n\r\n.modal {\r\n  position: absolute;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  top: 30%;\r\n  display: none;\r\n  place-items: center;\r\n}\r\n\r\n.modal fieldset {\r\n  background-color: rgb(209, 199, 199);\r\n  border: 2px solid black;\r\n  min-width: 40ch;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset input {\r\n  margin-bottom: 2rem;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA,6EAA6E;;AAE7E,yFAAyF;AACzF;EACE,iBAAiB;EACjB,iBAAiB;EACjB,yBAAyB;EACzB,4BAA4B;AAC9B;;AAEA,6FAA6F;;AAE7F;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,YAAY;EACZ,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,iBAAiB;EACjB,YAAY;AACd;;AAEA,wEAAwE;;AAExE;EACE,aAAa;EACb,gCAAgC;AAClC;AACA,yEAAyE;;AAEzE;EACE,6BAA6B;EAC7B,iBAAiB;EACjB,yBAAyB;EACzB,aAAa;AACf;;AAEA,0EAA0E;;AAE1E;EACE,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,wBAAwB;EACxB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;EACf,iBAAiB;AACnB;;AAEA,yEAAyE;;AAEzE;EACE,uBAAuB;EACvB,gBAAgB;EAChB,2BAA2B;EAC3B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,qBAAqB;EACrB,sBAAsB;EACtB,UAAU;EACV,eAAe;AACjB;;AAEA;EACE,oCAAoC;AACtC;;AAEA,yEAAyE;;AAEzE;EACE,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,QAAQ;EACR,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,oCAAoC;EACpC,uBAAuB;EACvB,eAAe;EACf,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* This stylesheet is temporary, a bare minimum to help test functionality  */\r\n\r\n/* GENERAL STYLES ===================================================================== */\r\nbody {\r\n  min-height: 100vh;\r\n  font-size: 1.8rem;\r\n  background-color: #eff0f1;\r\n  /* Temp to soften for eyes */\r\n}\r\n\r\n/* HEADER ================================================================================= */\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 10rem;\r\n  background-color: #2989ed;\r\n}\r\n\r\n.add-todo {\r\n  margin-left: 3rem;\r\n  border-radius: 50%;\r\n  height: 60px;\r\n  width: 60px;\r\n  font-size: 5rem;\r\n}\r\n\r\n.header h2 {\r\n  margin-left: 5rem;\r\n  color: white;\r\n}\r\n\r\n/* NAV / MAIN WRAPPER - LAYOUT ========================================*/\r\n\r\n.main-wrapper {\r\n  display: grid;\r\n  grid-template-columns: 30rem 1fr;\r\n}\r\n/* MAIN LEFT NAV ====================================================== */\r\n\r\n.main-nav {\r\n  border-right: 2px solid black;\r\n  min-height: 100vh;\r\n  background-color: #efefef;\r\n  padding: 2rem;\r\n}\r\n\r\n/* MAIN AREA / TODO VIEW =============================================== */\r\n\r\n.main {\r\n  padding: 0 2rem;\r\n}\r\n\r\n.list-view {\r\n  background-color: white;\r\n  border: 1px dotted black;\r\n  border-radius: 5px;\r\n  margin: 2rem 1rem;\r\n  padding: 0 2rem;\r\n  min-height: 20rem;\r\n}\r\n\r\n/* TODO CARD ========================================================== */\r\n\r\n.todo-header {\r\n  background-color: beige;\r\n  font-weight: 800;\r\n  border-top: 2px solid black;\r\n  border-bottom: 2px solid black;\r\n}\r\n\r\n.todo-card {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 2rem;\r\n}\r\n\r\n.todo-card button {\r\n  border-radius: 50%;\r\n  border: 2px solid red;\r\n  background-color: pink;\r\n  color: red;\r\n  cursor: pointer;\r\n}\r\n\r\n.todo-card button:hover {\r\n  background-color: rgb(236, 222, 225);\r\n}\r\n\r\n/* MODAL ============================================================== */\r\n\r\n.modal {\r\n  position: absolute;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  top: 30%;\r\n  display: none;\r\n  place-items: center;\r\n}\r\n\r\n.modal fieldset {\r\n  background-color: rgb(209, 199, 199);\r\n  border: 2px solid black;\r\n  min-width: 40ch;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset input {\r\n  margin-bottom: 2rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -948,6 +948,133 @@ function endOfMonth(dirtyDate) {
 
 /***/ }),
 
+/***/ "./node_modules/date-fns/esm/formatDistanceToNow/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/date-fns/esm/formatDistanceToNow/index.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ formatDistanceToNow)
+/* harmony export */ });
+/* harmony import */ var _formatDistance_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../formatDistance/index.js */ "./node_modules/date-fns/esm/formatDistance/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+/**
+ * @name formatDistanceToNow
+ * @category Common Helpers
+ * @summary Return the distance between the given date and now in words.
+ * @pure false
+ *
+ * @description
+ * Return the distance between the given date and now in words.
+ *
+ * | Distance to now                                                   | Result              |
+ * |-------------------------------------------------------------------|---------------------|
+ * | 0 ... 30 secs                                                     | less than a minute  |
+ * | 30 secs ... 1 min 30 secs                                         | 1 minute            |
+ * | 1 min 30 secs ... 44 mins 30 secs                                 | [2..44] minutes     |
+ * | 44 mins ... 30 secs ... 89 mins 30 secs                           | about 1 hour        |
+ * | 89 mins 30 secs ... 23 hrs 59 mins 30 secs                        | about [2..24] hours |
+ * | 23 hrs 59 mins 30 secs ... 41 hrs 59 mins 30 secs                 | 1 day               |
+ * | 41 hrs 59 mins 30 secs ... 29 days 23 hrs 59 mins 30 secs         | [2..30] days        |
+ * | 29 days 23 hrs 59 mins 30 secs ... 44 days 23 hrs 59 mins 30 secs | about 1 month       |
+ * | 44 days 23 hrs 59 mins 30 secs ... 59 days 23 hrs 59 mins 30 secs | about 2 months      |
+ * | 59 days 23 hrs 59 mins 30 secs ... 1 yr                           | [2..12] months      |
+ * | 1 yr ... 1 yr 3 months                                            | about 1 year        |
+ * | 1 yr 3 months ... 1 yr 9 month s                                  | over 1 year         |
+ * | 1 yr 9 months ... 2 yrs                                           | almost 2 years      |
+ * | N yrs ... N yrs 3 months                                          | about N years       |
+ * | N yrs 3 months ... N yrs 9 months                                 | over N years        |
+ * | N yrs 9 months ... N+1 yrs                                        | almost N+1 years    |
+ *
+ * With `options.includeSeconds == true`:
+ * | Distance to now     | Result               |
+ * |---------------------|----------------------|
+ * | 0 secs ... 5 secs   | less than 5 seconds  |
+ * | 5 secs ... 10 secs  | less than 10 seconds |
+ * | 10 secs ... 20 secs | less than 20 seconds |
+ * | 20 secs ... 40 secs | half a minute        |
+ * | 40 secs ... 60 secs | less than a minute   |
+ * | 60 secs ... 90 secs | 1 minute             |
+ *
+ * > ⚠️ Please note that this function is not present in the FP submodule as
+ * > it uses `Date.now()` internally hence impure and can't be safely curried.
+ *
+ * ### v2.0.0 breaking changes:
+ *
+ * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
+ *
+ * - The function was renamed from `distanceInWordsToNow ` to `formatDistanceToNow`
+ *   to make its name consistent with `format` and `formatRelative`.
+ *
+ *   ```javascript
+ *   // Before v2.0.0
+ *
+ *   distanceInWordsToNow(new Date(2014, 6, 2), { addSuffix: true })
+ *   //=> 'in 6 months'
+ *
+ *   // v2.0.0 onward
+ *
+ *   formatDistanceToNow(new Date(2014, 6, 2), { addSuffix: true })
+ *   //=> 'in 6 months'
+ *   ```
+ *
+ * @param {Date|Number} date - the given date
+ * @param {Object} [options] - the object with options
+ * @param {Boolean} [options.includeSeconds=false] - distances less than a minute are more detailed
+ * @param {Boolean} [options.addSuffix=false] - result specifies if now is earlier or later than the passed date
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @returns {String} the distance in words
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `date` must not be Invalid Date
+ * @throws {RangeError} `options.locale` must contain `formatDistance` property
+ *
+ * @example
+ * // If today is 1 January 2015, what is the distance to 2 July 2014?
+ * var result = formatDistanceToNow(
+ *   new Date(2014, 6, 2)
+ * )
+ * //=> '6 months'
+ *
+ * @example
+ * // If now is 1 January 2015 00:00:00,
+ * // what is the distance to 1 January 2015 00:00:15, including seconds?
+ * var result = formatDistanceToNow(
+ *   new Date(2015, 0, 1, 0, 0, 15),
+ *   {includeSeconds: true}
+ * )
+ * //=> 'less than 20 seconds'
+ *
+ * @example
+ * // If today is 1 January 2015,
+ * // what is the distance to 1 January 2016, with a suffix?
+ * var result = formatDistanceToNow(
+ *   new Date(2016, 0, 1),
+ *   {addSuffix: true}
+ * )
+ * //=> 'in about 1 year'
+ *
+ * @example
+ * // If today is 1 January 2015,
+ * // what is the distance to 1 August 2016 in Esperanto?
+ * var eoLocale = require('date-fns/locale/eo')
+ * var result = formatDistanceToNow(
+ *   new Date(2016, 7, 1),
+ *   {locale: eoLocale}
+ * )
+ * //=> 'pli ol 1 jaro'
+ */
+
+function formatDistanceToNow(dirtyDate, dirtyOptions) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__.default)(1, arguments);
+  return (0,_formatDistance_index_js__WEBPACK_IMPORTED_MODULE_1__.default)(dirtyDate, Date.now(), dirtyOptions);
+}
+
+/***/ }),
+
 /***/ "./node_modules/date-fns/esm/formatDistance/index.js":
 /*!***********************************************************!*\
   !*** ./node_modules/date-fns/esm/formatDistance/index.js ***!
@@ -1178,133 +1305,6 @@ function formatDistance(dirtyDate, dirtyBaseDate, dirtyOptions) {
       return locale.formatDistance('almostXYears', years + 1, localizeOptions);
     }
   }
-}
-
-/***/ }),
-
-/***/ "./node_modules/date-fns/esm/formatDistanceToNow/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/date-fns/esm/formatDistanceToNow/index.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ formatDistanceToNow)
-/* harmony export */ });
-/* harmony import */ var _formatDistance_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../formatDistance/index.js */ "./node_modules/date-fns/esm/formatDistance/index.js");
-/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
-
-
-/**
- * @name formatDistanceToNow
- * @category Common Helpers
- * @summary Return the distance between the given date and now in words.
- * @pure false
- *
- * @description
- * Return the distance between the given date and now in words.
- *
- * | Distance to now                                                   | Result              |
- * |-------------------------------------------------------------------|---------------------|
- * | 0 ... 30 secs                                                     | less than a minute  |
- * | 30 secs ... 1 min 30 secs                                         | 1 minute            |
- * | 1 min 30 secs ... 44 mins 30 secs                                 | [2..44] minutes     |
- * | 44 mins ... 30 secs ... 89 mins 30 secs                           | about 1 hour        |
- * | 89 mins 30 secs ... 23 hrs 59 mins 30 secs                        | about [2..24] hours |
- * | 23 hrs 59 mins 30 secs ... 41 hrs 59 mins 30 secs                 | 1 day               |
- * | 41 hrs 59 mins 30 secs ... 29 days 23 hrs 59 mins 30 secs         | [2..30] days        |
- * | 29 days 23 hrs 59 mins 30 secs ... 44 days 23 hrs 59 mins 30 secs | about 1 month       |
- * | 44 days 23 hrs 59 mins 30 secs ... 59 days 23 hrs 59 mins 30 secs | about 2 months      |
- * | 59 days 23 hrs 59 mins 30 secs ... 1 yr                           | [2..12] months      |
- * | 1 yr ... 1 yr 3 months                                            | about 1 year        |
- * | 1 yr 3 months ... 1 yr 9 month s                                  | over 1 year         |
- * | 1 yr 9 months ... 2 yrs                                           | almost 2 years      |
- * | N yrs ... N yrs 3 months                                          | about N years       |
- * | N yrs 3 months ... N yrs 9 months                                 | over N years        |
- * | N yrs 9 months ... N+1 yrs                                        | almost N+1 years    |
- *
- * With `options.includeSeconds == true`:
- * | Distance to now     | Result               |
- * |---------------------|----------------------|
- * | 0 secs ... 5 secs   | less than 5 seconds  |
- * | 5 secs ... 10 secs  | less than 10 seconds |
- * | 10 secs ... 20 secs | less than 20 seconds |
- * | 20 secs ... 40 secs | half a minute        |
- * | 40 secs ... 60 secs | less than a minute   |
- * | 60 secs ... 90 secs | 1 minute             |
- *
- * > ⚠️ Please note that this function is not present in the FP submodule as
- * > it uses `Date.now()` internally hence impure and can't be safely curried.
- *
- * ### v2.0.0 breaking changes:
- *
- * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
- *
- * - The function was renamed from `distanceInWordsToNow ` to `formatDistanceToNow`
- *   to make its name consistent with `format` and `formatRelative`.
- *
- *   ```javascript
- *   // Before v2.0.0
- *
- *   distanceInWordsToNow(new Date(2014, 6, 2), { addSuffix: true })
- *   //=> 'in 6 months'
- *
- *   // v2.0.0 onward
- *
- *   formatDistanceToNow(new Date(2014, 6, 2), { addSuffix: true })
- *   //=> 'in 6 months'
- *   ```
- *
- * @param {Date|Number} date - the given date
- * @param {Object} [options] - the object with options
- * @param {Boolean} [options.includeSeconds=false] - distances less than a minute are more detailed
- * @param {Boolean} [options.addSuffix=false] - result specifies if now is earlier or later than the passed date
- * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
- * @returns {String} the distance in words
- * @throws {TypeError} 1 argument required
- * @throws {RangeError} `date` must not be Invalid Date
- * @throws {RangeError} `options.locale` must contain `formatDistance` property
- *
- * @example
- * // If today is 1 January 2015, what is the distance to 2 July 2014?
- * var result = formatDistanceToNow(
- *   new Date(2014, 6, 2)
- * )
- * //=> '6 months'
- *
- * @example
- * // If now is 1 January 2015 00:00:00,
- * // what is the distance to 1 January 2015 00:00:15, including seconds?
- * var result = formatDistanceToNow(
- *   new Date(2015, 0, 1, 0, 0, 15),
- *   {includeSeconds: true}
- * )
- * //=> 'less than 20 seconds'
- *
- * @example
- * // If today is 1 January 2015,
- * // what is the distance to 1 January 2016, with a suffix?
- * var result = formatDistanceToNow(
- *   new Date(2016, 0, 1),
- *   {addSuffix: true}
- * )
- * //=> 'in about 1 year'
- *
- * @example
- * // If today is 1 January 2015,
- * // what is the distance to 1 August 2016 in Esperanto?
- * var eoLocale = require('date-fns/locale/eo')
- * var result = formatDistanceToNow(
- *   new Date(2016, 7, 1),
- *   {locale: eoLocale}
- * )
- * //=> 'pli ol 1 jaro'
- */
-
-function formatDistanceToNow(dirtyDate, dirtyOptions) {
-  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__.default)(1, arguments);
-  return (0,_formatDistance_index_js__WEBPACK_IMPORTED_MODULE_1__.default)(dirtyDate, Date.now(), dirtyOptions);
 }
 
 /***/ }),
