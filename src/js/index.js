@@ -5,7 +5,7 @@ import { checkStorage } from "./storageManager.js";
 import { Todo } from "./todo.js";
 import { DataController } from "./dataController.js"; // May be redundant if it's coming from the storage manager
 import { DisplayTodo } from "./displayTodo.js";
-import { check } from "prettier";
+import { format, formatDistanceToNow, parseISO } from "date-fns";
 
 const todoWindow = document.querySelector(".todo-window");
 // This is no good. temp for now
@@ -29,9 +29,9 @@ const submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", () => {
   const title = document.querySelector("input[name='name']").value;
   const description = document.querySelector("input[name='description']").value;
-  const due = document.querySelector("input[name='due-date']").value;
+  const dueDate = document.querySelector("input[name='due-date']").value;
 
-  const todo = { title, description, due };
+  const todo = { title, description, dueDate };
   addTodoToDom(todo);
   console.log(todo);
 
@@ -49,3 +49,24 @@ function renderTodos(container, list) {
 }
 
 localStorage.setItem("todoData", JSON.stringify(todoData));
+
+const option1 = {
+  title: "Date1",
+  dueDate: "2022-05-08",
+};
+
+const option2 = {
+  title: "Date1",
+  dueDate: "2022-05-08",
+};
+
+const todo1 = new Todo(option1);
+const todo2 = new Todo(option2);
+
+console.log({ todo1, todo2 });
+
+const iso = parseISO(option1.dueDate);
+
+// const formatted = format(iso, "");
+const distance = formatDistanceToNow(iso, { addSuffix: true });
+console.log(distance);

@@ -1,3 +1,5 @@
+import { formatDistanceToNow, parseISO } from "date-fns";
+
 export class DisplayTodo {
   constructor(todo) {
     this.todo = todo;
@@ -40,7 +42,16 @@ export class DisplayTodo {
 
   _dueDate() {
     const due = document.createElement("div");
-    due.textContent = this.todo.date;
+    due.textContent = this._formatDate();
     return due;
+  }
+
+  _formatDate() {
+    try {
+      const iso = parseISO(this.todo.dueDate);
+      return formatDistanceToNow(iso, { addSuffix: true });
+    } catch (error) {
+      return "";
+    }
   }
 }

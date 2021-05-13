@@ -4,7 +4,7 @@ export class Todo {
     this.id = options.id;
     this.title = options.title;
     this.description = options.description;
-    this.date = options.date;
+    this.dueDate = options.dueDate;
     this.project = options.project;
     this.priority = options.priority;
     this.complete = options.complete;
