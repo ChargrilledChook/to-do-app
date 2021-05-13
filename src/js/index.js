@@ -44,7 +44,11 @@ function addTodoToDom(data) {
 }
 
 function renderTodos(container, list) {
-  container.innerHTML = "";
+  const nodes = container.childNodes;
+  console.log(nodes);
+  while (nodes.length > 2) {
+    container.removeChild(container.lastChild);
+  }
   list.forEach((todo) => container.append(new DisplayTodo(todo).card));
 }
 

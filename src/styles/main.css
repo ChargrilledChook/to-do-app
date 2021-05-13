@@ -62,6 +62,13 @@ body {
 
 /* TODO CARD ========================================================== */
 
+.todo-header {
+  background-color: beige;
+  font-weight: 800;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 .todo-card {
   display: flex;
   align-items: center;
