@@ -6,6 +6,7 @@ Web dev's initiation ritual
 
 ## Todo
 
+- [ ] Extract index into separate modules
 - [ ] Sketch object structure
 
 ## Potential Features
