@@ -2924,20 +2924,25 @@ function addProject() {
     var project = document.querySelector("#project-title").value;
     todoData.projects.push(project);
     modalClear(modal);
+    updateProjects();
     localStorage.setItem("todoData", JSON.stringify(todoData));
   });
 }
 
-var projectContainer = document.querySelector(".projects");
-projectContainer.innerHTML = "";
-var projectHTML = todoData.projects.map(function (project) {
-  var div = document.createElement("div");
-  div.textContent = project;
-  return div;
-});
-projectHTML.forEach(function (project) {
-  projectContainer.append(project);
-});
+updateProjects();
+
+function updateProjects() {
+  var projectContainer = document.querySelector(".projects");
+  projectContainer.innerHTML = "";
+  var projectHTML = todoData.projects.map(function (project) {
+    var div = document.createElement("div");
+    div.textContent = project;
+    return div;
+  });
+  projectHTML.forEach(function (project) {
+    projectContainer.append(project);
+  });
+}
 })();
 
 /******/ })()

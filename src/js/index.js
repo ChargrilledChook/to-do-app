@@ -94,18 +94,22 @@ function addProject() {
 
     todoData.projects.push(project);
     modalClear(modal);
+    updateProjects();
     localStorage.setItem("todoData", JSON.stringify(todoData));
   });
 }
 
-const projectContainer = document.querySelector(".projects");
-projectContainer.innerHTML = "";
-const projectHTML = todoData.projects.map((project) => {
-  const div = document.createElement("div");
-  div.textContent = project;
-  return div;
-});
+updateProjects();
+function updateProjects() {
+  const projectContainer = document.querySelector(".projects");
+  projectContainer.innerHTML = "";
+  const projectHTML = todoData.projects.map((project) => {
+    const div = document.createElement("div");
+    div.textContent = project;
+    return div;
+  });
 
-projectHTML.forEach((project) => {
-  projectContainer.append(project);
-});
+  projectHTML.forEach((project) => {
+    projectContainer.append(project);
+  });
+}
