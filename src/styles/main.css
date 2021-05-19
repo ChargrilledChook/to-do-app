@@ -103,7 +103,7 @@ body {
 }
 
 .modal fieldset {
-  background-color: rgb(209, 199, 199);
+  background-color: rgb(206, 213, 238);
   border: 2px solid black;
   min-width: 40ch;
   display: flex;
