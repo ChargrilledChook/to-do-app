@@ -75,6 +75,10 @@ body {
   align-items: center;
 }
 
+.todo-card h3 {
+  font-weight: 400;
+}
+
 .todo-card button {
   border-radius: 50%;
   border: 2px solid red;
@@ -108,4 +112,10 @@ body {
 
 fieldset input {
   margin-bottom: 2rem;
+}
+
+fieldset .modal-priority {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }

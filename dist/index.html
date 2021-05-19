@@ -19,20 +19,20 @@
     </header>
     <div class="main-wrapper">
       <nav class="main-nav">
-      <div class='date-sort'>
-        <h3>Sort By Due Date</h3>
-        <div>All</div>
-        <div>Today</div>
-        <div>3 Days</div>
-        <div>This Week</div>
-        <div>This Month</div>
-      </div>
-      <div class='project-sort'>
-        <h3>Sort By Project</h3>
-        <div class="projects">
-          <div id="all-projects">All</div>
+        <div class="date-sort">
+          <h3>Sort By Due Date</h3>
+          <div>All</div>
+          <div>Today</div>
+          <div>3 Days</div>
+          <div>This Week</div>
+          <div>This Month</div>
         </div>
-      </div>
+        <div class="project-sort">
+          <h3>Sort By Project</h3>
+          <div class="projects">
+            <div id="all-projects">All</div>
+          </div>
+        </div>
       </nav>
       <main class="main">
         <div class="todo-window list-view">
@@ -40,16 +40,13 @@
           <div class="todo-container">
             <header class="todo-header todo-card">
               <div>Title</div>
-              <div>Description</div>
-              <div>Project</div>
-              <div>Due</div>
             </header>
           </div>
         </div>
-        <div class="complete-window list-view">
+        <!-- <div class="complete-window list-view">
           <h2>Complete</h2>
           <div class="todo-container"></div>
-        </div>
+        </div> -->
       </main>
     </div>
 
@@ -60,8 +57,29 @@
         <input type="text" name="name" />
         <label for="description">Description</label>
         <input type="text" name="description" />
+        <fieldset class="modal-priority">
+          <legend>Priority</legend>
+          <div>
+            <label for="prio1">High</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="prio2">Medium</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="prio3">Low</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="prio4">Very Low</label>
+            <input type="radio" />
+          </div>
+        </fieldset>
+
         <label for="due-date">Due</label>
         <input type="date" name="due-date" />
+
         <input type="button" value="submit" id="submit" />
       </fieldset>
     </form>
