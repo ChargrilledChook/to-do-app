@@ -27,9 +27,11 @@ addButton.addEventListener("click", () => {
 
 const submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", formHandler);
-
+const modal = document.querySelector("#todo-form");
 const cancelButton = document.querySelector("#cancel");
-cancelButton.addEventListener("click", modalClear);
+cancelButton.addEventListener("click", () => {
+  modalClear(modal);
+});
 
 function formHandler() {
   const title = document.querySelector("input[name='name']").value;
@@ -42,11 +44,10 @@ function formHandler() {
 
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
-  modalClear();
+  modalClear(modal);
 }
 
-function modalClear() {
-  const modal = document.querySelector(".modal");
+function modalClear(modal) {
   modal.style.display = "none";
   modal.reset();
 }
@@ -75,5 +76,36 @@ function renderTodos(container, list) {
   localStorage.setItem("todoData", JSON.stringify(todoData));
 }
 
-// I think this can be safely deleted but leaving for now in case
-// localStorage.setItem("todoData", JSON.stringify(todoData));
+// ADDING PROJECTS
+const addProjectBtn = document.querySelector(".add-project");
+addProjectBtn.addEventListener("click", addProject);
+
+function addProject() {
+  const modal = document.querySelector("#new-project");
+  modal.style.display = "flex";
+  const submit = modal.querySelector("#p-submit");
+  const cancel = modal.querySelector("#p-cancel");
+  cancel.addEventListener("click", () => {
+    modalClear(modal);
+  });
+
+  submit.addEventListener("click", () => {
+    const project = document.querySelector("#project-title").value;
+
+    todoData.projects.push(project);
+    modalClear(modal);
+    localStorage.setItem("todoData", JSON.stringify(todoData));
+  });
+}
+
+const projectContainer = document.querySelector(".projects");
+projectContainer.innerHTML = "";
+const projectHTML = todoData.projects.map((project) => {
+  const div = document.createElement("div");
+  div.textContent = project;
+  return div;
+});
+
+projectHTML.forEach((project) => {
+  projectContainer.append(project);
+});

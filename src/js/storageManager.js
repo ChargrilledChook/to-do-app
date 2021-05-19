@@ -5,7 +5,7 @@ export function checkStorage() {
 
   const storage = JSON.parse(localStorage.getItem("todoData"));
 
-  const { idCounter, todoList } = storage;
+  const { idCounter, todoList, projects } = storage;
 
-  return new DataController(idCounter, todoList);
+  return new DataController(idCounter, todoList, projects);
 }

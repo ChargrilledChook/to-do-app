@@ -36,19 +36,19 @@ var DataController = /*#__PURE__*/function () {
   function DataController() {
     var idCounter = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
     var todoList = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var projects = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
 
     _classCallCheck(this, DataController);
 
     this.idCounter = idCounter;
     this.todoList = todoList;
-  }
+    this.projects = projects;
+  } // get projects() {
+  //   return this._listProjects();
+  // }
+
 
   _createClass(DataController, [{
-    key: "projects",
-    get: function get() {
-      return this._listProjects();
-    }
-  }, {
     key: "addTodo",
     value: function addTodo(options) {
       options.id = this.idCounter;
@@ -207,8 +207,9 @@ function checkStorage() {
   if (!localStorage.getItem("todoData")) return new _dataController_js__WEBPACK_IMPORTED_MODULE_0__.DataController();
   var storage = JSON.parse(localStorage.getItem("todoData"));
   var idCounter = storage.idCounter,
-      todoList = storage.todoList;
-  return new _dataController_js__WEBPACK_IMPORTED_MODULE_0__.DataController(idCounter, todoList);
+      todoList = storage.todoList,
+      projects = storage.projects;
+  return new _dataController_js__WEBPACK_IMPORTED_MODULE_0__.DataController(idCounter, todoList, projects);
 }
 
 /***/ }),
@@ -2850,8 +2851,11 @@ addButton.addEventListener("click", function () {
 });
 var submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", formHandler);
+var modal = document.querySelector("#todo-form");
 var cancelButton = document.querySelector("#cancel");
-cancelButton.addEventListener("click", modalClear);
+cancelButton.addEventListener("click", function () {
+  modalClear(modal);
+});
 
 function formHandler() {
   var title = document.querySelector("input[name='name']").value;
@@ -2866,11 +2870,10 @@ function formHandler() {
   console.log(todo);
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
-  modalClear();
+  modalClear(modal);
 }
 
-function modalClear() {
-  var modal = document.querySelector(".modal");
+function modalClear(modal) {
   modal.style.display = "none";
   modal.reset();
 }
@@ -2903,8 +2906,38 @@ function renderTodos(container, list) {
     return container.append(todo);
   });
   localStorage.setItem("todoData", JSON.stringify(todoData));
-} // I think this can be safely deleted but leaving for now in case
-// localStorage.setItem("todoData", JSON.stringify(todoData));
+} // ADDING PROJECTS
+
+
+var addProjectBtn = document.querySelector(".add-project");
+addProjectBtn.addEventListener("click", addProject);
+
+function addProject() {
+  var modal = document.querySelector("#new-project");
+  modal.style.display = "flex";
+  var submit = modal.querySelector("#p-submit");
+  var cancel = modal.querySelector("#p-cancel");
+  cancel.addEventListener("click", function () {
+    modalClear(modal);
+  });
+  submit.addEventListener("click", function () {
+    var project = document.querySelector("#project-title").value;
+    todoData.projects.push(project);
+    modalClear(modal);
+    localStorage.setItem("todoData", JSON.stringify(todoData));
+  });
+}
+
+var projectContainer = document.querySelector(".projects");
+projectContainer.innerHTML = "";
+var projectHTML = todoData.projects.map(function (project) {
+  var div = document.createElement("div");
+  div.textContent = project;
+  return div;
+});
+projectHTML.forEach(function (project) {
+  projectContainer.append(project);
+});
 })();
 
 /******/ })()

@@ -29,6 +29,7 @@
         </div>
         <div class="project-sort">
           <h3>Sort By Project</h3>
+          <button class="add-project">Add a Project</button>
           <div class="projects">
             <div id="all-projects">All</div>
           </div>
@@ -50,13 +51,15 @@
       </main>
     </div>
 
-    <form class="modal">
+    <form class="modal" id="todo-form">
       <fieldset>
         <legend>New Todo</legend>
         <label for="name">Name</label>
-        <input type="text" name="name" />
+        <input type="text" name="name" id="name" />
         <label for="description">Description</label>
-        <input type="text" name="description" />
+        <input type="text" name="description" id="description" />
+        <label for="project">Project</label>
+        <select name="project" id="project-select"></select>
         <fieldset class="modal-priority">
           <legend>Priority</legend>
           <div>
@@ -78,10 +81,22 @@
         </fieldset>
 
         <label for="due-date">Due</label>
-        <input type="date" name="due-date" />
+        <input type="date" name="due-date" id="due-date" />
         <div class="modal-btns">
           <input type="button" value="Save Todo" id="submit" />
           <input type="button" value="Cancel" id="cancel" />
+        </div>
+      </fieldset>
+    </form>
+
+    <form class="modal" id="new-project">
+      <fieldset>
+        <legend>Add Project</legend>
+        <label for="project-title"></label>
+        <input type="text" name="project-title" id="project-title" />
+        <div class="modal-btns">
+          <input type="button" value="Add Project" id="p-submit" />
+          <input type="button" value="Cancel" id="p-cancel" />
         </div>
       </fieldset>
     </form>

@@ -1,14 +1,15 @@
 import { Todo } from "./todo.js";
 
 export class DataController {
-  constructor(idCounter = 0, todoList = []) {
+  constructor(idCounter = 0, todoList = [], projects = []) {
     this.idCounter = idCounter;
     this.todoList = todoList;
+    this.projects = projects;
   }
 
-  get projects() {
-    return this._listProjects();
-  }
+  // get projects() {
+  //   return this._listProjects();
+  // }
 
   addTodo(options) {
     options.id = this.idCounter;
