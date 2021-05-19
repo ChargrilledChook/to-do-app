@@ -28,6 +28,9 @@ addButton.addEventListener("click", () => {
 const submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", formHandler);
 
+const cancelButton = document.querySelector("#cancel");
+cancelButton.addEventListener("click", modalClear);
+
 function formHandler() {
   const title = document.querySelector("input[name='name']").value;
   const description = document.querySelector("input[name='description']").value;
@@ -39,6 +42,10 @@ function formHandler() {
 
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
+  modalClear();
+}
+
+function modalClear() {
   const modal = document.querySelector(".modal");
   modal.style.display = "none";
   modal.reset();

@@ -2850,6 +2850,8 @@ addButton.addEventListener("click", function () {
 });
 var submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", formHandler);
+var cancelButton = document.querySelector("#cancel");
+cancelButton.addEventListener("click", modalClear);
 
 function formHandler() {
   var title = document.querySelector("input[name='name']").value;
@@ -2864,6 +2866,10 @@ function formHandler() {
   console.log(todo);
   localStorage.setItem("todoData", JSON.stringify(todoData));
   renderTodos(todoBox, todoData.todoList);
+  modalClear();
+}
+
+function modalClear() {
   var modal = document.querySelector(".modal");
   modal.style.display = "none";
   modal.reset();
