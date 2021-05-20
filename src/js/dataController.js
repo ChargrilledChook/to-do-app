@@ -17,7 +17,7 @@ export class DataController {
     this.idCounter++;
     this.todoList.push(todo);
     // Return the thing we just added so we can use it straight away
-    return this.todoList[this.todoList.length - 1];
+    return this.todoList[this.todoList.length - 1]; // REFACTOR just use the intial variable lol
   }
 
   listByProject(project) {
